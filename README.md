@@ -1,5 +1,5 @@
 # casclient
-本cas客户端是在org.jasig.cas.client版本3.1.11基础上进行扩展 实现cas1.0协议
+本cas客户端是在org.jasig.cas.client版本3.1.11基础上进行扩展,实现cas1.0协议:
 扩展功能如下:
 
 1 支持例外URL，配置的URL不做认证检查
@@ -40,7 +40,7 @@
     	<filter-class>com.zdawn.casclient.ExtAuthenticationFilter</filter-class> 
         <init-param> 
             <param-name>casServerLoginUrl</param-name> 
-               <param-value>https://sso.tzwsh.gov.cn:8443/sso/login</param-value> 
+               <param-value>https://sso.zdawn.com:8443/sso/login</param-value>
         </init-param>
         <init-param>
                 <param-name>service</param-name> 
@@ -57,7 +57,7 @@
         <filter-class>com.zdawn.casclient.ExtCas10TicketValidationFilter</filter-class> 
         <init-param> 
                <param-name>casServerUrlPrefix</param-name> 
-              <param-value>http://sso.tzwsh.gov.cn:81/sso</param-value> 
+              <param-value>http://sso.zdawn.com:81/sso</param-value> 
         </init-param> 
         <init-param> 
                     <param-name>serverName</param-name> 
